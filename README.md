@@ -10,4 +10,5 @@
 * Check that pre-merge checks succeed
 * Check if merge if build on your branch succeeds
 * Wait until pull request is merged
+* Check final calculation result in action (part "Run calculator")
 
