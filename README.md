@@ -4,9 +4,10 @@
 * Create a fork (in github desktop select "To Contribute to the parent project")
 * Create a branch
 * In subfolder "input-files" create a file with ending .txt
-* Add a number into the first line of the file
+* Add a number between 1 and 999 into the first line of the file
 * Commit your changes to your branch
 * Create a pull request
-* Check if build on your branch succeeds
+* Check that pre-merge checks succeed
+* Check if merge if build on your branch succeeds
 * Wait until pull request is merged
 
