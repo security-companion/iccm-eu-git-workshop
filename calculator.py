@@ -2,20 +2,25 @@
 
 import os
 
-total_number = 0
- 
-for file_name in os.listdir("input-files"):
-    if file_name.endswith(".txt"):
-        print("Reading content of file {}".format(file_name))
+def main():
 
-        f = open("./input-files/" + file_name,"r")
-        lines = f.readlines()
+    total_number = 0
+     
+    for file_name in os.listdir("input-files"):
+        if file_name.endswith(".txt"):
+            print("Reading content of file {}".format(file_name))
 
-        for line in lines:
-            print(line, end="")
-            total_number = total_number + int(line)
-        print("\n")
+            f = open("./input-files/" + file_name,"r")
+            lines = f.readlines()
 
-print("\n\n" + "*" * 60)
-print("Summary of all numbers in all files is: {}".format(total_number))
-print("*" * 60 + "\n")
+            for line in lines:
+                print(line, end="")
+                total_number = total_number + int(line)
+            print("\n")
+
+    print("\n\n" + "*" * 60)
+    print("Summary of all numbers in all files is: {}".format(total_number))
+    print("*" * 60 + "\n")
+
+if __name__ == "__main__":
+    main()
